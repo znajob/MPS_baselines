@@ -144,7 +144,7 @@ class Trainer(torch.nn.Module):
         if self.wandb:
 
             if self.wandb_offline:
-                os.environ["WANDB_API_KEY"] = "7bc2a068d3c8b00e29b06f15b6e96081df751f1d"
+                os.environ["WANDB_API_KEY"] = "" //Enter your API key here
                 os.environ["WANDB_MODE"] = "dryrun"
 
             self.wandb_project = self.get_wandb_project()
